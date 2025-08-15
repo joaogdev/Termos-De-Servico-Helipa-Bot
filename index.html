@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Termos de Serviço – HELIPA TICKETS</title>
+  <meta name="description" content="Termos de Serviço do bot HELIPA TICKETS para Discord" />
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --panel: #111217;
+      --text: #e6e6e6;
+      --muted: #b6b6b6;
+      --brand: #7c3aed; /* roxo elegante */
+      --accent: #22d3ee; /* ciano sutil */
+      --border: #22242c;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #fafafa;
+        --panel: #ffffff;
+        --text: #0b0c10;
+        --muted: #4b5563;
+        --brand: #6d28d9;
+        --accent: #0891b2;
+        --border: #e5e7eb;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 100% -10%, rgba(124,58,237,.15), transparent 60%),
+                  radial-gradient(1000px 600px at -10% 110%, rgba(34,211,238,.12), transparent 60%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 920px; margin: 0 auto; padding: 32px 20px 72px; }
+    header {
+      display: grid; gap: 8px; justify-items: center; text-align: center; margin-bottom: 28px;
+    }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px;
+      border: 1px solid var(--border); background: color-mix(in oklab, var(--panel) 92%, transparent);
+      font-size: 12px; letter-spacing: .3px; color: var(--muted);
+    }
+    .title { font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: -.02em; margin: 6px 0 0; }
+    .subtitle { color: var(--muted); font-size: 14px; }
+
+    main { background: var(--panel); border: 1px solid var(--border); border-radius: 20px; padding: 28px; box-shadow: 0 10px 30px rgba(0,0,0,.15); }
+    section + section { border-top: 1px solid var(--border); margin-top: 16px; padding-top: 16px; }
+
+    h2 { font-size: clamp(18px, 2.5vw, 22px); margin: 8px 0 8px; }
+    p { margin: 0 0 10px; }
+    ul { margin: 10px 0 10px 20px; }
+    li { margin: 6px 0; }
+
+    .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    @media (min-width: 820px) {
+      .grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .callout { border-left: 4px solid var(--brand); background: color-mix(in oklab, var(--brand) 12%, var(--panel)); padding: 10px 12px; border-radius: 10px; }
+
+    .footer {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      margin-top: 20px; color: var(--muted); font-size: 12px;
+    }
+
+   .divulg {
+      display: flex; align-items: center; gap: 1rem;
+    }
+
+   
+    .brand { font-weight: 700; color: var(--brand); }
+    .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    .btn {
+      appearance: none; border: 1px solid var(--border); background: linear-gradient(180deg, color-mix(in oklab, var(--panel) 94%, transparent), var(--panel));
+      padding: 10px 14px; border-radius: 12px; font-weight: 600; cursor: pointer; color: var(--text);
+      text-decoration: none; transition: transform .06s ease, background .2s ease, border-color .2s ease;
+    }
+    .btn:hover { transform: translateY(-1px); border-color: color-mix(in oklab, var(--brand) 40%, var(--border)); }
+    .btn.primary { border-color: color-mix(in oklab, var(--brand) 50%, var(--border)); background: linear-gradient(180deg, color-mix(in oklab, var(--brand) 18%, var(--panel)), var(--panel)); }
+
+    nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; }
+    nav a { font-size: 12px; color: var(--muted); text-decoration: none; border: 1px dashed var(--border); padding: 6px 10px; border-radius: 999px; }
+    nav a:hover { border-color: color-mix(in oklab, var(--accent) 40%, var(--border)); color: var(--text); }
+
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size: 13px; }
+    .muted { color: var(--muted); }
+    .right { text-align: right; }
+    .sep { height: 1px; background: var(--border); margin: 12px 0; }
+
+    /* Impressão */
+    @media print {
+      body { background: #fff; }
+      main { box-shadow: none; }
+      nav, .actions { display: none; }
+      .footer { color: #444; }
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge" aria-label="Identidade do bot">
+        <span>🤖</span>
+        <span class="mono">HELIPA TICKETS</span>
+      </div>
+      <h1 class="title">Termos de Serviço</h1>
+      <p class="subtitle">Última atualização: <time datetime="2025-08-15">15 de agosto de 2025</time></p>
+      <nav aria-label="Navegação por seções">
+        <a href="#aceitacao">Aceitação</a>
+        <a href="#descricao">Descrição</a>
+        <a href="#regras">Regras de Uso</a>
+        <a href="#dados">Coleta de Dados</a>
+        <a href="#responsabilidade">Responsabilidade</a>
+        <a href="#alteracoes">Alterações</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="aceitacao">
+        <h2>1. Aceitação dos Termos</h2>
+        <p>Ao utilizar o bot <strong>HELIPA TICKETS</strong>, você concorda integralmente com estes Termos de Serviço e com as regras do Discord (<em>Discord Terms of Service</em> e <em>Community Guidelines</em>). Caso não concorde com qualquer parte destes termos, não utilize o bot.</p>
+      </section>
+
+      <section id="descricao">
+        <h2>2. Descrição do Serviço</h2>
+        <p>O <strong>HELIPA TICKETS</strong> é um bot para Discord destinado à <strong>criação e ao gerenciamento de tickets</strong> para suporte, atendimento ou organização interna de servidores. O uso é permitido apenas em servidores que cumpram as políticas do Discord e a legislação aplicável.</p>
+      </section>
+
+      <section id="regras">
+        <h2>3. Regras de Uso</h2>
+        <div class="grid">
+          <div>
+            <p>Você <strong>não pode</strong> utilizar o bot para:</p>
+            <ul>
+              <li>Criar tickets com conteúdo ilegal, abusivo, de ódio ou NSFW fora de canais apropriados;</li>
+              <li>Praticar assédio, discriminação ou divulgação de dados pessoais (<em>doxxing</em>);</li>
+              <li>Realizar <em>spam</em>, <em>flood</em> ou uso abusivo que prejudique a experiência de outros usuários;</li>
+              <li>Violar direitos autorais, marcas ou outras obrigações legais.</li>
+            </ul>
+          </div>
+          <div>
+            <p>Medidas em caso de uso indevido:</p>
+            <ul>
+              <li>Advertência e/ou restrição de comandos;</li>
+              <li>Bloqueio do acesso do servidor ou do usuário ao bot;</li>
+              <li>Comunicação às equipes de segurança do Discord quando cabível.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="dados">
+        <h2>4. Coleta e Uso de Dados</h2>
+        <p>Para viabilizar suas funcionalidades, o <strong>HELIPA TICKETS</strong> pode processar os seguintes dados:</p>
+        <ul>
+          <li><strong>Metadados do Discord</strong>: IDs de usuário, canal e servidor;</li>
+          <li><strong>Eventos de ticket</strong>: registros mínimos sobre tickets criados, atualizados e encerrados (ex.: responsável, status e carimbos de data/hora);
+          </li>
+        </ul>
+        <p>Esses dados são utilizados <strong>exclusivamente</strong> para fornecer e aprimorar o serviço, e <strong>não são vendidos</strong> a terceiros. Quando possível, os dados são minimizados e retidos apenas pelo tempo necessário.</p>
+        <p class="muted">Se você <em>não</em> armazena nada em banco: substitua esta seção por “Este bot não armazena informações pessoais além do necessário para operar os comandos em tempo real.”</p>
+      </section>
+
+      <section id="responsabilidade">
+        <h2>5. Limitação de Responsabilidade</h2>
+        <p>O <strong>HELIPA TICKETS</strong> é fornecido “no estado em que se encontra”, sem garantias de disponibilidade contínua ou de ausência de erros. Dentro dos limites legais, não nos responsabilizamos por perdas ou danos, diretos ou indiretos, decorrentes do uso ou da incapacidade de uso do bot.</p>
+      </section>
+
+      <section id="alteracoes">
+        <h2>6. Alterações nos Termos</h2>
+        <p>Podemos atualizar estes Termos a qualquer momento. As alterações passam a valer a partir da publicação desta página, indicada pela data de “Última atualização”.</p>
+      </section>
+
+      <section id="contato">
+        <h2>7. Contato</h2>
+        <p>Para dúvidas, sugestões ou reporte de problemas, entre em contato pelo Discord: <strong>@1crushedddd</strong>.</p>
+      </section>
+
+      <div class="sep" aria-hidden="true"></div>
+
+      <div class="footer">
+        <span>© <span id="year"></span> HELIPA TICKETS</span>
+        
+        <div class="divulg">
+
+           <span class="servers">SERVIDORES:</span>
+
+          <a href="https://discord.gg/zHBppRbuu6" target="_blank">
+          <img src="./images/107ab3e662ed432526995316769d226e (1).png" alt="HELIPA TICKETS" width="50" height="50">
+
+          <a href="https://discord.gg/EnrjegJ8ve" target="_blank">
+            <img src="./images/image.webp" alt="PXCOMMUNITY" width="50" height="50">
+        </div>
+          
+        
+        <a href="politicas.html">Políticas de Privacidade</a>
+    
+
+        <span class="brand">Developed By @1crushedddd</span>
+      </div>
+    </main>
+
+
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HELIPA TICKETS – Termos e Privacidade</title>
+  <meta name="description" content="Termos de Serviço e Política de Privacidade do bot HELIPA TICKETS para Discord" />
+  <style>
+    /* Mantém o mesmo estilo do HTML anterior */
+    :root {
+      --bg: #0b0c10;
+      --panel: #111217;
+      --text: #e6e6e6;
+      --muted: #b6b6b6;
+      --brand: #7c3aed;
+      --accent: #22d3ee;
+      --border: #22242c;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #fafafa;
+        --panel: #ffffff;
+        --text: #0b0c10;
+        --muted: #4b5563;
+        --brand: #6d28d9;
+        --accent: #0891b2;
+        --border: #e5e7eb;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: system-ui, sans-serif; background: var(--bg); color: var(--text);
+    }
+    .container { max-width: 920px; margin: 0 auto; padding: 32px 20px 72px; }
+    header { text-align: center; margin-bottom: 28px; }
+    .title { font-size: clamp(28px, 4vw, 40px); font-weight: 800; margin: 6px 0 0; }
+    .subtitle { color: var(--muted); font-size: 14px; }
+    nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    nav a { color: var(--muted); text-decoration: none; border: 1px dashed var(--border); padding: 6px 10px; border-radius: 999px; }
+    nav a:hover { border-color: var(--accent); color: var(--text); }
+    main { background: var(--panel); border: 1px solid var(--border); border-radius: 20px; padding: 28px; }
+    section + section { border-top: 1px solid var(--border); margin-top: 16px; padding-top: 16px; }
+    h2 { font-size: clamp(18px, 2.5vw, 22px); margin: 8px 0 8px; }
+    p, ul { margin-bottom: 10px; }
+    .footer { margin-top: 20px; color: var(--muted); font-size: 12px; text-align: center; }
+    .brand { font-weight: 700; color: var(--brand); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="title">HELIPA TICKETS</h1>
+      <p class="subtitle">Última atualização: <time datetime="2025-08-15">15 de agosto de 2025</time></p>
+      <nav>
+        <a href="#termos">Termos de Serviço</a>
+        <a href="#privacidade">Política de Privacidade</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="termos">
+        <h2>Termos de Serviço</h2>
+        <p>Ao utilizar o bot <strong>HELIPA TICKETS</strong>, você concorda integralmente com estes Termos de Serviço e com as regras do Discord. Caso não concorde com qualquer parte destes termos, não utilize o bot.</p>
+        <p>O <strong>HELIPA TICKETS</strong> é um bot para Discord focado na criação e gerenciamento de tickets. É proibido usá-lo para conteúdo ilegal, abusivo, NSFW fora de canais adequados, spam ou violações legais. O uso indevido pode resultar no bloqueio de acesso.</p>
+        <p>O bot pode coletar IDs de usuário, canal e servidor, além de registros de tickets, apenas para funcionamento. Não há venda ou compartilhamento de dados.</p>
+        <p>O serviço é fornecido "como está", sem garantias, e não nos responsabilizamos por danos decorrentes do uso.</p>
+      </section>
+
+      <section id="privacidade">
+        <h2>Política de Privacidade</h2>
+        <p>Esta Política descreve como o <strong>HELIPA TICKETS</strong> coleta, utiliza e protege informações. Ao usar o bot, você concorda com esta política.</p>
+        <ul>
+          <li><strong>Informações Coletadas:</strong> IDs de usuário, canal e servidor; eventos de tickets (data/hora, status, responsável). Nenhuma informação pessoal sensível é coletada sem consentimento.</li>
+          <li><strong>Uso dos Dados:</strong> operação do sistema de tickets, registros administrativos e melhorias de desempenho.</li>
+          <li><strong>Compartilhamento:</strong> não há venda ou aluguel de dados. Compartilhamento apenas por exigência legal ou regras do Discord.</li>
+          <li><strong>Retenção:</strong> dados armazenados pelo tempo necessário (ex.: até 30 dias) e removidos mediante solicitação.</li>
+          <li><strong>Segurança:</strong> medidas técnicas aplicadas para prevenir acessos não autorizados, embora nenhum sistema seja 100% seguro.</li>
+        </ul>
+        <p>Podemos modificar esta política a qualquer momento, com vigência imediata após publicação.</p>
+      </section>
+
+      <div class="footer">
+        © <span id="year"></span> HELIPA TICKETS — <span class="brand">Developed By @1crushedddd</span>
+      </div>
+    </main>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
