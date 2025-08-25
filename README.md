@@ -1,1 +1,1 @@
-https://helipa-terms.vercel.app/
+Site Termos De Serviço Bot: https://helipa-terms.vercel.app/
